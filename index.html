@@ -1,40 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kiwi case</title>
     <link rel="stylesheet" type="text/css" href="assets/css/estilo.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter?query=Inter#standard-styles" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/19211425fd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="assets/images/logo.png" alt="kiwi" class="logo_image">
+            <img src="assets/images/logo.png" alt="kiwi case" class="logo_image">
         </div>
         <div class="text">
-            <h4>Assistência técnica, venda de aparelhos novos, 
-                seminovos e acessórios, reparos avançados em placa.</h4>
+            <p>Assistência técnica, venda de aparelhos novos, seminovos e acessórios, reparos avançados em placa.</p>
         </div>
         <div class="social_media">
-            <a href="https://www.facebook.com/kiwicaseoficial"><img src="assets/images/facebook.png"></a>
-            <a href="https://www.instagram.com/kiwicaseoficial/"><img src="assets/images/instagram.png"></a>
+            <a target="_blank" href="https://www.facebook.com/kiwicaseoficial"><i class="fa-brands fa-square-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/kiwicaseoficial/"><i class="fa-brands fa-square-instagram"></i></a>
         </div>
-        <!-- <button class="btn">
-            <a href="https://wa.me/5513997529600">CHAMA NO ZAP<img src="assets/images/whatsapp.png"></a>
-        </button> -->
-        <figure id="button">
-            <a href="https://wa.me/5513997529600"></a><img src="./assets/images/button1.png"
-            onmouseover="this.src='./assets/images/button2.png'" 
-            onmouseout="this.src='./assets/images/button1.png'">           
-        </figure>
+        <button onclick="goto()" class="btn">CHAMA NO ZAP<i class="fa-brands fa-whatsapp"></i></button>        
+            <div class="developer">
+            <a target="_blank" href="https://ewdmarketingdigital.com.br/"><p>Desenvolvido por <span>EWD SOFTWARE HOUSE<span></p></a>
+        </div>
     </header>
-<footer>
-    <div class="developer">
-    <h5>Desenvolvido por <a>EWD SOFTWARE HOUSE</a></h5>
-    </div>
-</footer>
 </body>
+<script> 
+    function goto () {
+        window.open("https://wa.me/5513997529600");
+    }
+</script>
 </html>

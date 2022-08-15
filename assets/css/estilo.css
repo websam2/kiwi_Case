@@ -4,7 +4,8 @@
     --blue: #13303e;
     --greenLemon: #b3bc20;
     --greenLemonLight: #d9ff53;
-}
+@import url(https://fonts.google.com/specimen/Open+Sans?query=open+sans);
+}   
 
 /*Reset
 ====================================================================================*/
@@ -13,91 +14,127 @@
     padding: 0px;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: "Inter", Arial, Helvetica, sans-serif;
-}
-a{
     text-decoration: none;
-}
-nav ul,
-nav li {
-    list-style: none;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 /*Config
 ====================================================================================*/
+
 body {
     display: flex;
-    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
 }
+
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
-    width: 100vw;
-    height: 100vh;
+    align-items: center;
+    width: 100%; 
     background-color: var(--blue);
 }
-body .logo .img {
-    display: flex;
+
+.logo {
     justify-content: center;
-    width: 480px;
+    animation: backInDown;
+    animation-duration: 1.5s;  
 }
-body .logo_image .img:hover {
-    background-color: var(--greenLemonLight);
-}
-body .text {
-    display: flex;
+
+.text {
     justify-content: center;
-    width: 450px;
+    max-width: 410px;
     font-size: 16px;
     line-height: 19px;
     bottom: 27px;
     text-align: center;
     color: var(--white);
+    animation: bounceIn;
+    animation-duration: 1.5s;
 }
-body .social_media {
-    display: flex;
+
+.social_media {
     position: relative;
     justify-content: space-between;
     width: 58px;
     top: 27px;
+    cursor: pointer;
+    animation: bounceIn;
+    animation-duration: 1.5s;
 }
-/* button {
+
+.fa-brands {
+    color: var(--greenLemon);
+    font-size: 30px;
+}
+
+button {
     display: flex;
     position: relative;
+    cursor: pointer;
+    animation: backInUp;
+    animation-duration: 1.5s;
+}
+
+.btn {
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    top: 30px;
+    margin: 30px;
     width: 360px;
     height: 55px;
+    border: none;
     border-radius: 9px;
-    top: 54px;
-    font-weight: bold;
-    text-decoration: none;
     color:var(--blue);
     background-color: var(--greenLemon);
 }
+
 button:hover {
     background-color: var(--greenLemonLight);
-} */
+}
+
+.fa-whatsapp{
+    color: var(--blue);
+    margin-left: 10px;
+}
+
 figure img {
     position: relative;
     top: 57px;
     width: 360px;
     height: 54px;
 }
-footer {
+
+.developer {
     display: flex;
+    align-items: center;
     justify-content: center;
     align-items: center;
-}
-footer .developer {
     position: absolute;
-    bottom: 2%;
-    color: var(--white)
+    bottom: 25px;
+    cursor: pointer;
+    animation: bounceIn;
+    animation-duration: 1.5s;
 }
-footer .developer a {
+
+.developer p {
+    color: var(--white);
+}
+
+.developer span {
     color: var(--greenLemon);
+}
+
+@media (max-width: 576px) {
+    .logo_image {
+        width: 300px;      
+    }
+    .btn {
+        width: 250px;
+    }
 }
 
 
