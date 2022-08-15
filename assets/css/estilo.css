@@ -1,0 +1,104 @@
+:root {
+    --black: #000; 
+    --white: #fff;
+    --blue: #13303e;
+    --greenLemon: #b3bc20;
+    --greenLemonLight: #d9ff53;
+}
+
+/*Reset
+====================================================================================*/
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+nav ul,
+nav li {
+    list-style: none;
+}
+
+/*Config
+====================================================================================*/
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--blue);
+}
+body .logo .img {
+    display: flex;
+    justify-content: center;
+    width: 480px;
+}
+body .logo_image .img:hover {
+    background-color: var(--greenLemonLight);
+}
+body .text {
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    font-size: 16px;
+    line-height: 19px;
+    bottom: 27px;
+    text-align: center;
+    color: var(--white);
+}
+body .social_media {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 58px;
+    top: 27px;
+}
+/* button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center; 
+    width: 360px;
+    height: 55px;
+    border-radius: 9px;
+    top: 54px;
+    font-weight: bold;
+    text-decoration: none;
+    color:var(--blue);
+    background-color: var(--greenLemon);
+}
+button:hover {
+    background-color: var(--greenLemonLight);
+} */
+figure img {
+    position: relative;
+    top: 57px;
+    width: 360px;
+    height: 54px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .developer {
+    position: absolute;
+    bottom: 2%;
+    color: var(--white)
+}
+footer .developer a {
+    color: var(--greenLemon);
+}
+
+
+       
